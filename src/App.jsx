@@ -18,6 +18,7 @@ const sectionVariants = {
 const App = () => {
   
   return (
+    
     <div className="bg-gradient-to-r from-violet-200 to-pink-200 w-full">
       
       <nav className="flex flex-wrap justify-between items-center h-[60px] px-6  text-[#240046] text-2xl font-mono font-extrabold">
