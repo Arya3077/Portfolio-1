@@ -28,9 +28,9 @@ const App = () => {
 
         
         <div className="flex flex-wrap items-center gap-4">
-          <a href="#About" className="hover:text-gray-700">About</a>
-          <a href="#Projects" className="hover:text-gray-700">Projects</a>
-          <a href="#Contact" className="hover:text-gray-700">Contact</a>
+          <a href="#About" className="hover:text-gray-700 hidden md:flex">About</a>
+          <a href="#Projects" className="hover:text-gray-700 hidden md:flex">Projects</a>
+          <a href="#Contact" className="hover:text-gray-700 hidden md:flex">Contact</a>
           </div>
           <div>
           <button className='w-12 h-12 rounded-full bg-gradient-to-r from-purple-100 to-purple-400 text-white flex items-center justify-center hover:bg-purple-600 transition'>
@@ -49,7 +49,6 @@ const App = () => {
       >
         <Home />
         <div className='flex justify-center items-center'>
-        <div className='flex justify-center text-2xl font-bold items-center bg-gradient-to-r from-purple-100 to-purple-400 rounded-2xl h-24 cursor-pointer mt-0 w-36 hover:bg-fuchsia-300'><a href='#Projects'><button > MY WORKS </button></a></div>
         </div>
       </motion.div>
 

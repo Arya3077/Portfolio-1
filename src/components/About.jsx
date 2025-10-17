@@ -33,7 +33,8 @@ const About = () => {
          whileInView="visible"
          viewport={{ once: true, amount: 0.3 }}
        >
-         <Carousel />
+         <div className='mb-14'><Carousel /></div>
+        
        </motion.div>
 </div>
         </div>
