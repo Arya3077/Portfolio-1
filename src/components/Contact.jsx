@@ -13,13 +13,13 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Open default email client using mailto
-    window.location.href = `mailto:yourname@example.com?subject=Contact from ${form.name}&body=${form.message} - Email: ${form.email}`;
+    
+    window.location.href = `mailto:arya.shibu.dhanya1200@gmail.com?subject=Contact from ${form.name}&body=${form.message} - Email: ${form.email}`;
   };
 
   return (
     <>
-    <h1 className="text-[#10002B] mt-40 text-4xl font-mono font-extrabold pl-10">Let's connect</h1>
+    <h1 className="text-[#10002B] mt-40 text-5xl font-mono font-extrabold px-4 md:px-10 py-20 ml-35">LET'S CONNECT</h1>
     <div className="flex justify-center items-center py-12 bg-primary dark:bg-primary-dark">
       <form
         onSubmit={handleSubmit}
@@ -29,7 +29,7 @@ const ContactForm = () => {
           Contact Me
         </h2>
 
-        {/* Name Input */}
+      
         <input
           type="text"
           name="name"
@@ -40,7 +40,7 @@ const ContactForm = () => {
           required
         />
 
-        {/* Email Input */}
+       
         <input
           type="email"
           name="email"
@@ -51,7 +51,7 @@ const ContactForm = () => {
           required
         />
 
-        {/* Message Input */}
+        
         <textarea
           name="message"
           placeholder="Your Message"
@@ -62,7 +62,7 @@ const ContactForm = () => {
           required
         ></textarea>
 
-        {/* Submit Button */}
+     
         <button
           type="submit"
           className="bg-purple-500 hover:bg-purple-600 text-white font-semibold py-3 rounded-xl transition-transform hover:scale-105"
