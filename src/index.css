@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme{
+    ---color-primary: bg-gradient-to-r from-violet-50 to-purple-50;
+    ---color-primary-dark: bg-gradient-to-r from-zinc-900 to-slate-700;
+}
+
