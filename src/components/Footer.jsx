@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const Footer = () => {
   return (
-    <div className='h-40 bg-fuchsia-950 flex justify-center flex-col gap-3 items-center'>
+    <div className='h-40 bg-fuchsia-950 flex justify-center flex-col gap-3 items-center dark:bg-gray-950 dark:text-shadow-white'>
         
         <div className='flex flex-row justify-center items-center gap-6' >
        <a href="https://github.com/Arya3077"> <motion.div
@@ -34,7 +34,7 @@ const Footer = () => {
 
        
                 </div>
-<div> <p>© 2025 Arya Shibu</p></div>
+<div> <p className='dark:text-gray-500'>© 2025 Arya Shibu</p></div>
                 
     </div>
     

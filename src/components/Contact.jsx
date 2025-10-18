@@ -17,7 +17,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex justify-center items-center w-full">
+    <div className="flex justify-center items-center w-full dark:bg-gray-900 dark:text-white">
       <form
         onSubmit={handleSubmit}
         className="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8 w-full max-w-lg flex flex-col gap-6"
@@ -71,10 +71,10 @@ const Contact = () => {
   return (
     <section
       id="Contact"
-      className="bg-primary dark:bg-primary-dark px-4 md:px-10 py-20"
+      className="bg-primary dark:bg-gray-900 px-4 md:px-10 py-20 dark:text-white "
     >
       <div className="max-w-6xl mx-auto flex flex-col gap-12">
-        <h1 className="text-4xl md:text-5xl font-mono font-extrabold text-[#10002B] text-center mb-12">
+        <h1 className="text-4xl md:text-5xl font-mono font-extrabold text-[#10002B] text-center mb-12 dark:text-white">
           LET'S CONNECT
         </h1>
         <ContactForm />

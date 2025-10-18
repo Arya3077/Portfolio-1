@@ -13,19 +13,19 @@ const About = () => {
   };
 
   return (
-    <section id="About" className="bg-primary dark:bg-primary-dark px-4 md:px-10 py-20">
+    <section id="About" className="bg-primary dark:bg-gray-900 px-4 md:px-10 py-20 dark:text-shadow-white">
       <div className="max-w-6xl mx-auto flex flex-col gap-12">
-        {/* ABOUT TEXT */}
+        
         <div>
-          <h2 className="text-4xl md:text-5xl font-mono font-extrabold mb-6">ABOUT</h2>
-          <p className="text-lg md:text-2xl leading-relaxed">
+          <h2 className="text-4xl md:text-5xl font-mono font-extrabold mb-6 dark:text-white">ABOUT</h2>
+          <p className="text-lg md:text-2xl leading-relaxed dark:text-white">
             Hi! I’m Arya, an aspiring web developer and designer passionate about turning ideas into beautiful, functional websites. I love coding interactive experiences and designing eye-catching visuals using Figma. I’m always learning, experimenting, and pushing my creative boundaries to build projects that inspire.
           </p>
         </div>
 
         {/* SKILLS CAROUSEL */}
         <div>
-          <h3 className="text-3xl md:text-4xl font-bold mb-6">SKILLS</h3>
+          <h3 className="text-3xl md:text-4xl font-bold mb-6 dark:text-white">SKILLS</h3>
           <motion.div
             variants={sectionVariants}
             initial="hidden"
