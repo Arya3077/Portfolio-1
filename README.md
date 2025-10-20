@@ -1,16 +1,29 @@
-# React + Vite
+# 💻 Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **personal portfolio website** to showcase projects, skills, and experience. Built with **React.js** and **Tailwind CSS**, featuring a modern, responsive design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
+- **Home Section:** Introduction and professional tagline
+- **About Section:** Personal bio, skills, and experiences
+- **Projects Section:** Showcase of projects with links and screenshots
+- **Contact Section:** Contact form integrated with email
+- **Responsive Design:** Works on desktop, tablet, and mobile
+- **Dark Mode Toggle:** Light and dark theme support
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎨 Demo
 
-## Expanding the ESLint configuration
+**Live Preview:** [https://portfolio-1-632d-jjp68tm0m-arya3077s-projects.vercel.app/ ]
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Technologies Used
+- **Frontend:** React.js, Tailwind CSS, HTML5, CSS3
+- **JavaScript:** ES6, React Hooks
+- **Forms:** Email integration via form submission API
+- **Version Control:** Git & GitHub
+
+
