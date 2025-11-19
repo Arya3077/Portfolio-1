@@ -16,7 +16,7 @@ A **personal portfolio website** to showcase projects, skills, and experience. B
 
 ## 🎨 Demo
 
-**Live Preview:** [https://portfolio-1-632d-jjp68tm0m-arya3077s-projects.vercel.app/ ]
+**Live Preview:** [https://arya-shibu-dhanya.vercel.app/]
 
 ---
 
