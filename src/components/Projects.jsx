@@ -5,6 +5,7 @@ const Projects = () => {
   return (
     <section id="Projects" className="bg-primary dark:bg-gray-900 px-4 md:px-10 py-20">
       <div className="max-w-6xl mx-auto flex flex-col gap-12">
+        
         <h2 className="text-4xl md:text-5xl font-mono font-extrabold text-[#10002B] mb-10 dark:text-white">
           PROJECTS
         </h2>
@@ -14,7 +15,7 @@ const Projects = () => {
         
           <div className="flex flex-col items-center gap-6">
             <motion.div
-              className="pro h-64 md:h-96 w-full md:w-[500px] bg-white flex dark:bg-gray-50 flex-col justify-center items-center rounded-3xl shadow-2xl"
+              className="pro h-64 md:h-96 sm:h-52 sm:w-48 w-full md:w-[500px] bg-white flex dark:bg-gray-50 flex-col justify-center items-center rounded-3xl shadow-2xl"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               viewport={{ once: true }}
@@ -29,7 +30,7 @@ const Projects = () => {
      
           <div className="flex flex-col items-center gap-6">
             <motion.div
-              className="pro h-64 md:h-96 w-full md:w-[500px] bg-white flex flex-col justify-center items-center rounded-3xl shadow-2xl shadow-2xl"
+              className="pro h-64 md:h-96 w-full md:w-[500px] bg-white flex flex-col justify-center items-center rounded-3xl shadow-2xl"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               viewport={{ once: true }}

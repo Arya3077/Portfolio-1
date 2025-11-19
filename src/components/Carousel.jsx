@@ -6,6 +6,9 @@ const skills = [
   { img: "figma.png", alt: "Figma" },
   { img: "firebase.png", alt: "Firebase" },
   { img: "images.png", alt: "Images" },
+  { img: "supa.png", alt: "Images" },
+  { img: "javascript.png", alt: "Images" },
+  
   
 ];
 
@@ -15,7 +18,7 @@ const Carousel = () => {
       {skills.map((skill, index) => (
         <motion.div
           key={index}
-          className="h-32 w-32 sm:h-36 sm:w-36 md:h-40 md:w-40 lg:h-44 lg:w-44 bg-white flex justify-center items-center rounded-xl shadow-md"
+          className="h-32 w-32 sm:h-36 sm:w-36 md:h-30 md:w-35 lg:h-44 lg:w-44 bg-white flex justify-center items-center rounded-xl shadow-md"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           viewport={{ once: true }}
