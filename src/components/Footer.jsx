@@ -24,7 +24,7 @@ const Footer = () => {
 
                  
 
-                 <a href="mailto:arya.shibu.dhanya@gmail.com"> <motion.div
+                 <a href="mailto:arya.shibu.dhanya1200@gmail.com"> <motion.div
                   className="pro h-[50px] w-[50px] bg-white flex  justify-center items-center rounded-xl"
                    whileHover={{ scale: 1.1 }}
                    whileTap={{ scale: 0.95 }}
