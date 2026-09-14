@@ -2,42 +2,41 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const Footer = () => {
+  const socials = [
+    { href: "https://github.com/Arya3077", img: "git.png", label: "GitHub" },
+    { href: "https://www.linkedin.com/in/arya-shibu-dhanya/", img: "linkedin.png", label: "LinkedIn" },
+    { href: "mailto:arya.shibu.dhanya1200@gmail.com", img: "mail.png", label: "Email" },
+  ]
+
   return (
-    <div className='h-40 bg-fuchsia-950 flex justify-center flex-col gap-3 items-center dark:bg-gray-950 dark:text-shadow-white'>
-        
-        <div className='flex flex-row justify-center items-center gap-6' >
-       <a href="https://github.com/Arya3077"> <motion.div
-                  className="pro h-[50px] w-[50px] bg-white flex  justify-center items-center rounded-xl"
-                   whileHover={{ scale: 1.1 }}
-                   whileTap={{ scale: 0.95 }}
-                  viewport={{ once: true }}
-                  
-                ><img src="git.png"></img></motion.div></a>
+    <footer className="py-10 bg-[#10002B] dark:bg-gray-950 text-white flex flex-col justify-center items-center gap-6 border-t border-purple-900/30">
+      <div className="flex flex-row justify-center items-center gap-5">
+        {socials.map((soc, idx) => (
+          <a
+            key={idx}
+            href={soc.href}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={soc.label}
+          >
+            <motion.div
+              className="h-12 w-12 bg-white/90 hover:bg-white dark:bg-gray-800 dark:hover:bg-gray-700 flex justify-center items-center rounded-2xl shadow-md p-2.5 transition-all"
+              whileHover={{ scale: 1.15, y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              viewport={{ once: true }}
+            >
+              <img src={soc.img} alt={soc.label} className="w-full h-full object-contain" />
+            </motion.div>
+          </a>
+        ))}
+      </div>
 
-       <a href="https://www.linkedin.com/in/arya-shibu-dhanya/"> <motion.div
-                  className="pro h-[50px] w-[50px] bg-white flex  justify-center items-center rounded-xl"
-                   whileHover={{ scale: 1.1 }}
-                   whileTap={{ scale: 0.95 }}
-                  viewport={{ once: true }}
-                  
-                ><img src="linkedin.png"></img></motion.div></a>
-
-                 
-
-                 <a href="mailto:arya.shibu.dhanya1200@gmail.com"> <motion.div
-                  className="pro h-[50px] w-[50px] bg-white flex  justify-center items-center rounded-xl"
-                   whileHover={{ scale: 1.1 }}
-                   whileTap={{ scale: 0.95 }}
-                  viewport={{ once: true }}
-                  
-                ><img src="mail.png"></img></motion.div></a>
-
-       
-                </div>
-<div> <p className='dark:text-gray-500'>© 2025 Arya Shibu</p></div>
-                
-    </div>
-    
+      <div className="text-center px-4">
+        <p className="text-xs sm:text-sm font-mono text-purple-200/80 dark:text-gray-400">
+          Designed & Built by Arya Shibu Dhanya • © {new Date().getFullYear()}
+        </p>
+      </div>
+    </footer>
   )
 }
 
