@@ -35,7 +35,7 @@ const ContactForm = () => {
           <input
             type="text"
             name="name"
-            placeholder="John Doe"
+            placeholder="Your Name"
             value={form.name}
             onChange={handleChange}
             className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500 dark:bg-gray-900 dark:text-white text-sm sm:text-base transition-all"
@@ -50,7 +50,7 @@ const ContactForm = () => {
           <input
             type="email"
             name="email"
-            placeholder="john@example.com"
+            placeholder="example@gmail.com"
             value={form.email}
             onChange={handleChange}
             className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500 dark:bg-gray-900 dark:text-white text-sm sm:text-base transition-all"
@@ -77,7 +77,7 @@ const ContactForm = () => {
           type="submit"
           className="bg-purple-600 hover:bg-purple-700 text-white font-mono font-bold py-3.5 px-6 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg hover:shadow-purple-500/20 active:scale-95 cursor-pointer mt-2"
         >
-          Send Message 🚀
+          Send Message
         </button>
 
         {submitted && (
