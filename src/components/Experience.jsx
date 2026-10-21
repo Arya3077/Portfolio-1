@@ -1,41 +1,38 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { motion, useReducedMotion } from 'framer-motion'
 
 const Experience = () => {
+  const prefersReduced = useReducedMotion()
+
   const experiences = [
     {
       company: 'GTech μLearn',
       role: 'Frontend Developer Intern',
-      duration: '6 months',
       status: 'Present',
       description:
-        'Currently working as a Frontend Developer Intern at GTech μLearn, contributing to production-oriented web applications and user-facing features.',
+        'Working as a Frontend Developer Intern at GTech μLearn, actively contributing to production-oriented web applications, developing scalable frontend components, and delivering responsive user interfaces.',
       projects: [
         {
           name: 'μLearn Dashboard 2.0',
           description:
-            'Contributed to frontend development and implementation of features for the μLearn platform.',
+            'Contributed to core frontend development, data display modules, and responsive UI implementations for the foundation platform.',
         },
       ],
-      skills: ['React.js', 'Frontend Development', 'UI/UX Implementation', 'Web Applications'],
+      skills: ['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'UI/UX Implementation', 'Web Applications'],
     },
   ]
 
   return (
-    <section id="Experience" className="bg-primary dark:bg-gray-900 px-4 md:px-10 py-16 md:py-24">
+    <section id="Experience" className="bg-primary dark:bg-gray-900 px-4 md:px-10 py-16 md:py-24 transition-colors">
       <div className="max-w-6xl mx-auto flex flex-col gap-12">
+        {/* Header */}
         <div>
-          <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-mono font-extrabold text-[#10002B] dark:text-white mb-3"
-          >
+          <h2 className="text-4xl md:text-5xl font-mono font-extrabold text-[#10002B] dark:text-white mb-3 tracking-tight">
             EXPERIENCE
-          </motion.h2>
-          <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
-            Professional experience & key contributions in web application development.
+          </h2>
+
+          <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl leading-relaxed">
+            Professional experience & key contributions in web application engineering and collaborative development.
           </p>
         </div>
 
@@ -43,12 +40,12 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 40 }}
+              initial={prefersReduced ? false : { opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -4 }}
-              className="bg-white dark:bg-gray-800 rounded-3xl p-6 md:p-10 shadow-xl border border-purple-100 dark:border-gray-700 hover:shadow-2xl transition-all duration-300 relative overflow-hidden"
+              transition={{ duration: 0.55, delay: prefersReduced ? 0 : index * 0.15 }}
+              viewport={{ once: true, amount: 0.2 }}
+              whileHover={prefersReduced ? undefined : { y: -4 }}
+              className="bg-white dark:bg-gray-800/90 rounded-3xl p-6 md:p-10 shadow-xl border border-purple-100 dark:border-gray-700 hover:border-purple-300 dark:hover:border-purple-600/70 hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300 relative overflow-hidden group"
             >
               <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-purple-500 to-fuchsia-500" />
               
@@ -58,7 +55,7 @@ const Experience = () => {
                     <h3 className="text-2xl md:text-3xl font-extrabold text-[#10002B] dark:text-white">
                       {exp.role}
                     </h3>
-                    <span className="px-3 py-1 text-xs font-semibold rounded-full bg-purple-100 text-purple-700 dark:bg-purple-900/60 dark:text-purple-300">
+                    <span className="px-3 py-1 text-xs font-semibold rounded-full bg-purple-100 text-purple-700 dark:bg-purple-900/60 dark:text-purple-300 border border-purple-200 dark:border-purple-800/50">
                       {exp.status}
                     </span>
                   </div>
@@ -94,7 +91,7 @@ const Experience = () => {
                 {exp.skills.map((skill, sIdx) => (
                   <span
                     key={sIdx}
-                    className="px-3 py-1 text-xs md:text-sm font-mono font-medium rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300"
+                    className="px-3 py-1 text-xs md:text-sm font-mono font-medium rounded-lg bg-gray-100 dark:bg-gray-700/80 text-gray-700 dark:text-gray-300 border border-transparent hover:border-purple-200 dark:hover:border-purple-700 transition-colors"
                   >
                     {skill}
                   </span>
